@@ -8,7 +8,20 @@
     <script src="./script.js" defer></script>
 </head>
 <body>
-    <button id="add-book">Add Book</button>
+    
+    <fieldset class="form">
+
+        <div class="row1">
+            <label for="book_title">BOOK TITLE</label>
+            <input autocomplete="off" type="text" id="book_title" name="book_name" placeholder="LORD OF THE RINGS" required>
+            <label for="author_name">AUTHOR NAME</label>
+            <input autocomplete="off" type="text" id="author_name" name="writer_name" placeholder="JRR Tolkien" required>
+            <label for="page_count">PAGE COUNT</label>
+            <input autocomplete="off" type="text" id="page_count" name="pages" placeholder="9875135465" required>
+            <button id="add-book">Add Book</button>
+        </div>  
+        
+        </fieldset>
     <div id="container"></div>
 </body>
 </html>
