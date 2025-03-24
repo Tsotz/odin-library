@@ -21,9 +21,9 @@ const addBookToLibrary = function (...bookNames) {
     
 }
 
-let book1 = new Book ("Tsotz's life", "Tsotz", "548");
-let book2 = new Book ("Yggy's life", "Yggrall", "465");
-let book3 = new Book ("Morthal's life", "Morthal", "498");
+let book1 = new Book ("ABC'life", "ABC", "548");
+let book2 = new Book ("DEF's life", "DEF", "465");
+let book3 = new Book ("BUy's life", "BUy", "498");
 
 addBookToLibrary(book1, book2, book3);
 
