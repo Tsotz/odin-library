@@ -1,12 +1,20 @@
 const library = [];
 
-const Book = function (title, author, page) {
-    
+class Book {
+    constructor (title, author, page) 
+    {
     this.read = "unread";
     this.id = crypto.randomUUID();
     this.title = title;
     this.author = author;
     this.page = page;
+    }
+
+    toggleReadStatus()
+    {
+    if (this.read === "unread") {this.read = "read";}
+    else {this.read = "unread";};
+    }
 
 }
 
@@ -58,9 +66,8 @@ const displayLibrary = function () {
 
         bookRead.addEventListener("click", () => {
 
-            
-            if (book.read === "unread") { book.read = "read"; bookRead.textContent = "Read"}
-            else if (book.read === "read") { book.read = "unread"; bookRead.textContent = "Unread"};
+            book.toggleReadStatus();
+            bookRead.textContent = book.read === "unread" ? "Unread" : "Read";
 
         });
 
